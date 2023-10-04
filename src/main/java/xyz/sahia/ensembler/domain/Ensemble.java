@@ -6,7 +6,7 @@ import java.util.Objects;
 public class Ensemble {
     private final String name;
     private final ZonedDateTime startDateTime;
-    private int numberRegistered =0;
+    private int numberRegistered = 0;
 
     public Ensemble(String name, ZonedDateTime startDateTime) {
         this.name = Objects.requireNonNull(name,"name cannot be null");

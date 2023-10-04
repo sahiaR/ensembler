@@ -11,7 +11,6 @@ public class InMemoryEnsembleRepository implements EnsembleRepository{
         ensembles.add(ensemble);
         return ensemble;
     }
-
     @Override
     public List<Ensemble> findAll() {
         return List.copyOf(ensembles);

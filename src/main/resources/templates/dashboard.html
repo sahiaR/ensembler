@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ensembler Dashboard</title>
+    <title>MobOrg Dashboard</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
     <style>
         table {
             width: 100%;
@@ -30,6 +28,30 @@
     </style>
 </head>
 <body class="p-4">
-<h1 class="text-3xl mb-6">Sessions</h1>
+<h1 class="text-3xl mb-6">Ensembles</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Date/Time</th>
+        <th># Registered</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="ensemble: ${ensembles}">
+        <td th:text="${ensemble.name()}"/>
+        <td th:text="${ensemble.dateTime()}"/>
+        <td th:text="${ensemble.numberRegistered()}"/>
+    </tr>
+    <!-- display "none found" when there are none  -->
+    </tbody>
+</table>
+<form action="/schedule" method="post" th:object="${scheduleEnsembleForm}">
+    <div>Name: <input type="text" th:field="*{name}"></div>
+    <div>Date: <input type="date" th:field="*{date}"></div>
+    <div>Time: <input type="time" th:field="*{time}"></div>
+    <div>
+        <button type="submit">Schedule Nouveau Ensemble</button>
+    </div>
+</form>
 </body>
-</html>

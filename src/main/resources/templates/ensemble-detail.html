@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ensemble Details</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body class="p-4">
+    <h1 class="text-3xl mb-6">Detail</h1>
+    <p>Name: <span th:text="${ensemble.name}">Nom</span></p>
+    <p>Date/time: <span th:text="${ensemble.startDateTime}">04/10/2023 11:00am </span></p>
+    <p>Duration: <span th:text="${ensemble.duration}">90 minutes</span></p>
+    <p>Topic: <span th:text="${ensemble.topic}">Project Loom</span></p>
+    <p>Current Size: <span th:text="${ensemble.size}">4/5</span></p>
+</body>
+</html>
