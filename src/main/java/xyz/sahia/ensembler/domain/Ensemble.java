@@ -4,6 +4,7 @@ import java.time.ZonedDateTime;
 import java.util.Objects;
 
 public class Ensemble {
+    private EnsembleId id;
     private final String name;
     private final ZonedDateTime startDateTime;
     private int numberRegistered = 0;
@@ -21,5 +22,13 @@ public class Ensemble {
 
     public int numberRegistered(){
         return numberRegistered;
+    }
+
+    public EnsembleId getId(){
+        return  id;
+    }
+
+    public void setId(EnsembleId id){
+        this.id = id;
     }
 }

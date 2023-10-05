@@ -1,4 +1,4 @@
-package xyz.sahia.ensembler.adapter;
+package xyz.sahia.ensembler.adapter.in.web;
 
 import xyz.sahia.ensembler.domain.Ensemble;
 

@@ -1,4 +1,4 @@
-package xyz.sahia.ensembler.adapter;
+package xyz.sahia.ensembler.adapter.in.web;
 
 public record EnsembleDetailView(String name,
                                  String startDateTime,

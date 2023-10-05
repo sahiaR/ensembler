@@ -1,4 +1,4 @@
-package xyz.sahia.ensembler.adapter;
+package xyz.sahia.ensembler.adapter.in.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
